@@ -16,7 +16,7 @@ typedef struct {
 // duplica cadenas con malloc
 char* xstrdup(const char* s) {
     char* p = malloc(strlen(s) + 1); // reservo memoria exacta
-    if (p) strcpy(p, s);             // copio contenido
+    if (p) strcpy(p, s);             // se copia el contenido
     return p;
 }
 
@@ -41,12 +41,12 @@ void student_free(Student* st) {
     free(st);            // libero struct
 }
 
-// contenedor dinamico de estudiantes
+
 typedef struct {
     Student** data;   // array dinamico de punteros a estudiantes
-    size_t n;         // cantidad de estudiantes
-    size_t cap;       // capacidad total
-    size_t holes;     // huecos por eliminacion
+    size_t n;        
+    size_t cap;       
+    size_t holes;     
 } Vec;
 
 // inicializa vector
@@ -59,9 +59,9 @@ void vec_init(Vec* v) {
 void vec_add(Vec* v, Student* st) {
     if (v->n == v->cap) {                              // si no hay espacio
         v->cap = v->cap ? v->cap * 2 : 4;              // duplico o inicio en 4
-        v->data = realloc(v->data, v->cap * sizeof(Student*)); // pido mas memoria
+        v->data = realloc(v->data, v->cap * sizeof(Student*)); // pide mas memoria
     }
-    v->data[v->n++] = st; // guardo y aumento cantidad
+    v->data[v->n++] = st; 
 }
 
 // elimina por id
@@ -69,8 +69,8 @@ void vec_remove_by_id(Vec* v, uint32_t id) {
     for (size_t i = 0; i < v->n; i++) {
         if (v->data[i] && v->data[i]->id == id) { // encuentro id
             student_free(v->data[i]);             // libero memoria del estudiante
-            v->data[i] = NULL;                    // marco hueco
-            v->holes++;                           // sumo hueco
+            v->data[i] = NULL;                    
+            v->holes++;                           
             // recorto si el hueco esta al final
             while (v->n > 0 && v->data[v->n - 1] == NULL) {
                 v->n--;      // reduzco cantidad
@@ -81,12 +81,12 @@ void vec_remove_by_id(Vec* v, uint32_t id) {
     }
 }
 
-// compacta memoria
+// compacta la memoria
 void vec_compact(Vec* v) {
     size_t j = 0; // nuevo indice
     for (size_t i = 0; i < v->n; i++) {
         if (v->data[i]) {        // si no es hueco
-            v->data[j++] = v->data[i]; // muevo hacia adelante
+            v->data[j++] = v->data[i]; // se mueve hacia adelante
         }
     }
     v->n = j;        // nueva cantidad real
@@ -135,7 +135,7 @@ int main() {
     printf("Estudiantes iniciales:\n");
     print_students(&v);
 
-    vec_remove_by_id(&v, 2); // elimino a Coco
+    vec_remove_by_id(&v, 2); // se elimina a Coco
 
     printf("\nDespues de eliminar:\n");
     print_students(&v);
