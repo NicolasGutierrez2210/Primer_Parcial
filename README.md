@@ -48,3 +48,39 @@ O bien, cargar el archivo directamente en GHCi:
 ```bash
 ghci declarativo1.hs
 ```
+
+---
+
+## Análisis comparativo
+
+### Claridad y legibilidad
+- **Imperativo (Python):** El Codigo es mas extenso y explicito; muestra paso a paso el proceso de insercion. Es Facil de seguir si se quiere entender el “como”.
+- **Declarativo (Haskell):** Codigo es conciso y expresivo; el criterio de orden esta en una sola expresión. Se centra en el “que”.
+
+### Expresividad y abstraccion
+- **Python:**  Hay bajo nivel de abstraccion; control manual de bucles e inserciones.
+- **Haskell:** Hay alto nivel; se abstrae en funciones puras y composicion de comparadores.
+
+### Estructuras de datos
+- **Python:**  Las listas son mutables, modificadas en cada insercion.
+- **Haskell:** Listas inmutables; cada insercion devuelve una nueva lista ordenada.
+
+### Manejo de estado
+- **Python:** Estado compartido y cambiante en la lista global.
+- **Haskell:** Estado explicito mediante funciones que retornan nuevas listas.
+
+### Mantenimiento y extensión
+- **Python:** Para agregar nuevas reglas de orden hay que modificar la logica del bucle.
+- **Haskell:** Basta con añadir otra función de comparación a la composicion.
+
+### Eficiencia
+- **Python (insercion ordenada):** Cada insercion cuesta O(n); para muchas inserciones → O(n²).  
+- **Haskell (`sortBy`):** Cada ordenamiento cuesta O(n log n). Si se insertan muchos estudiantes, conviene acumularlos y ordenar una sola vez.
+
+---
+
+## Conclusion
+Ambos enfoques cumplen el objetivo, pero muestran diferencias claras de paradigma:
+- **Imperativo (Python):** controla el *proceso* de ordenación paso a paso, usando mutabilidad y estado compartido.  
+- **Declarativo/Funcional (Haskell):** expresa directamente el *criterio de orden*, trabaja con inmutabilidad y funciones puras, logrando mayor concisión y mantenibilidad.  
+
