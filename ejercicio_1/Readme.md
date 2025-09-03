@@ -1,6 +1,4 @@
-# Parcial primer corte- Ejercicios 
-
-## Ejercicio 1 – Ordenamiento de estudiantes
+# Ejercicio 1 – Ordenamiento de estudiantes
 
 ## Enunciado  
 - Tienes una lista de estudiantes con sus calificaciones en un examen final.  
