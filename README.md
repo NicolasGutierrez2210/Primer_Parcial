@@ -8,7 +8,6 @@ El objetivo es ordenar la lista en orden **descendente por calificación** y, en
 Se deben implementar dos enfoques que representen diferentes paradigmas de programación: **imperativo** y **declarativo**.  
 ---
 ## Objetivo:
-
 Implementar un sistema de ordenamiento de estudiantes utilizando dos paradigmas de programación distintos (imperativo en Python y declarativo/funcional en Haskell), con el fin de comparar sus diferencias en cuanto a claridad, abstracción, manejo de estado, mutabilidad de estructuras y eficiencia algorítmica, destacando cómo cada enfoque resuelve el mismo problema desde perspectivas opuestas.
 ---
 ## Como ejecutar el codigo de Phyton
