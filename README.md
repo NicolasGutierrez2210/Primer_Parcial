@@ -6,9 +6,10 @@ Aplicar diferentes paradigmas de programacion mediante la resolucion de ejercici
 ---
 
 ## Ejercicios
-- **Ejercicio 1:** Ordenamiento de estudiantes (Python – imperativo, Haskell – declarativo).  
-- **Ejercicio 2:** Gestion dinamica de memoria para registros de estudiantes en C.  
-- **Ejercicio 3:** Calculo del promedio con notacion lambda en Haskell.  
+- [**Ejercicio 1**](./ejercicio_1) → Ordenamiento de estudiantes (Python – imperativo, Haskell – declarativo).  
+- [**Ejercicio 2**](./ejercicio2) → Gestion dinamica de memoria para registros de estudiantes en C.  
+- [**Ejercicio 3**](./ejercicio_3) → Calculo del promedio con notacion lambda en Haskell.  
+
 
 Cada ejercicio cuenta con su propio README explicativo dentro de su carpeta.
 Cada ejercico cuenta con su codigo en su respectiva carpeta
