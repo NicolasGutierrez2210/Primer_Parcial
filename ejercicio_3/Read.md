@@ -9,12 +9,7 @@ Implementar el calculo del **promedio de una lista de n numeros** utilizando **n
 El calculo lambda es una herramienta matematica que describe la computacion desde un enfoque **funcional** y **declarativo**.  
 En este ejercicio, se va a definir una funcion en notacion lambda que toma una lista de numeros y devuelve su promedio.
 
-- **Notacion lambda matematica:**
-
-\[
-\lambda xs.\; \frac{(\text{foldr}\; (+)\; 0\; xs)}{(\text{length}\; xs)}
-\]
-
+---
 - **Implementacion en Haskell:**  
 El codigo implementado se encuentra en el archivo **`lambda_has.hs`**.  
 Este programa:
