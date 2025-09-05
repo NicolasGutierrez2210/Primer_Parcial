@@ -1,7 +1,7 @@
 # Parcial de Primer corte paradigamas de programacion
 
-## 🎯 Objetivo
-Aplicar diferentes paradigmas de programacion y gestion de memoria en C mediante la resolucion de ejercicios practicos.
+##  Objetivo
+Aplicar diferentes paradigmas de programacion mediante la resolucion de ejercicios practicos.
 
 ---
 
