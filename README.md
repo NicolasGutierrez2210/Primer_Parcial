@@ -11,4 +11,4 @@ Aplicar diferentes paradigmas de programacion mediante la resolucion de ejercici
 - **Ejercicio 3:** Calculo del promedio con notacion lambda en Haskell.  
 
 Cada ejercicio cuenta con su propio README explicativo dentro de su carpeta.
-
+Cada ejercico cuenta con su codigo en su respectiva carpeta
