@@ -9,11 +9,11 @@ Implementar un sistema en C para gestionar estudiantes de manera dinamica y efic
 
 Para compilar el programa en C se usa `gcc` (GNU Compiler Collection).
 
-1. Abrir la terminal en la carpeta donde esta el archivo `ejercicio2.c`.  
+1. Abrir la terminal en la carpeta donde esta el archivo `Ejercicio2.c`.  
 2. Ejecutar el siguiente comando para compilar:  
 
    ```bash
-   gcc ejercicio2.c -o ejercicio2
+   gcc Ejercicio2.c -o ejercicio2
    ```
 3. Para ejecutar el programa, usar:
     ```bash
