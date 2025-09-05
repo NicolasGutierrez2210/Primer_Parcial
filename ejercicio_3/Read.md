@@ -1,11 +1,11 @@
 # Ejercicio 3 – Calculo Lambda en Haskell
 
-## 🎯 Objetivo
+## Objetivo
 Implementar el calculo del **promedio de una lista de n numeros** utilizando **notacion de calculo lambda** en Haskell.
 
 ---
 
-## 📖 Descripcion
+## Descripcion
 El calculo lambda es una herramienta matematica que describe la computacion desde un enfoque **funcional** y **declarativo**.  
 En este ejercicio, se va a definir una funcion en notacion lambda que toma una lista de numeros y devuelve su promedio.
 
